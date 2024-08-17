@@ -1,6 +1,5 @@
 import torch
 
-
 def pca(Y, N):
     d = torch.mean(Y, dim=1).unsqueeze(1)
     Y_cen = Y - d
